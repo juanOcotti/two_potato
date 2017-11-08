@@ -9,7 +9,7 @@ html {
 
 body {
   max-width: 910px; 
-  background-image: url(img/micherrie.jpg);  
+  background-image: url(micherrie.jpg);  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
@@ -91,7 +91,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* PARIS */
 #container div:nth-child(8) {
-  background-image: url(img/paris-apt.png);
+  background-image: url(paris-apt.png);
   background-color: transparent;
   background-repeat: no-repeat;  
   background-position: left center; 
@@ -105,7 +105,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* CHERRY TREE BLOSSOM */
 #container div:nth-child(9) { 
-  background-image: url(img/micherrie150sq.png);  }
+  background-image: url(micherrie150sq.png);  }
 
   #container div:nth-child(9) > div {    
     background: transparent; 
@@ -115,7 +115,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* ZINNIA */
 #container div:nth-child(10) {
-  background-image: url(img/carnival-zinnia.jpg);
+  background-image: url(carnival-zinnia.jpg);
   background-repeat: no-repeat;  
   background-position: center; }
 
@@ -129,7 +129,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* HORSE BODY */
 #container div:nth-child(11) {
-  background-image: url(img/horse_ovrlay.png);
+  background-image: url(horse_ovrlay.png);
   background-repeat: no-repeat;  
   background-position: center; } 
 
