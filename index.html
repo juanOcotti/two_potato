@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Git Fade In/Out</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>  
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<div id="container">
+<!-- nth 1  --> 
+    <div><p>Hello</p></div>
+<!-- nth 2  -->     
+    <div><p>Hello</p></div>
+<!-- nth 3  -->    
+    <div class="showme"><p>Fade Out</p></div>
+<!-- nth 4  -->    
+    <div class="showme"><p>Fade Out</p></div>
+<!--nth 5  zig zag -->
+    <div class="showme"><p>Fade Out</p><div><h2>go</h2></div></div>   
+<!-- nth 6  -->
+    <div class="showme"></div>
+<!-- nth 7  -->
+    <div class="showme"></div>
+<!-- nth 8  -->
+    <div class="hideme">
+      <div><h2>St. Germain-des-Pres</h2></div>
+    </div>
+<!-- nth 9  -->
+    <div class="hideme">
+     <div><h2>St.Germain</h2></div>
+    </div>
+<!-- nth 10  -->    <div class="hideme">
+      <div><h2>St. Germain-des-Pres</h2></div>
+      <div><h2>Fade In's</h2></div>
+    </div>
+<!-- nth 11  -->
+    <div class="hideme"></div>
+<!-- nth 12  -->
+    <div class="hideme">    
+      <div><h2>Rodeo of La Grande</h2></div>
+    </div>
+<!--nth 13 round horse  -->
+    <div class="hideme">
+      <div class="first"></div>
+      <div class="second"><h2>go</h2></div>
+      <div class="third"><h2>go</h2></div>
+    </div>
+<!-- nth 14  croc-->
+    <div class="hideme">
+      <div></div>
+    </div>      
+<!-- nth 15 wide panel -->    
+    <div class="hideme"></div>
+<!-- nth 16 buthan bird  -->
+    <div class="hideme">
+      <div class="first"></div>
+      <div class="second"><h2>go</h2></div>
+      <div class="third"><h2>go</h2></div>
+    </div>
+<!-- nth 17 hotel morrocco --> 
+    <div class="hideme">
+      <div><h2>go</h2></div>
+    </div>
+<!-- nth 18  --> 
+    <div class="hideme"> 
+    </div>
+<!-- nth 19 last --> 
+    <div class="hideme">
+      <div><h1>[</h1></div>
+      <div><h1>]</h1></div>
+    </div>
+
+
+</div><!-- end container -->
+<footer>
+  <div class="ripple">
+    <h2>start</h2>
+  </div>
+</footer>
+
+<!--class changes-->
+<script>
+/*works fades out/in each 1 at time both directions*/
+ /*fade out scroll top units */ 
+$(window).scroll(function() {
+    $('.showme').each(function() {
+        if (($(this).offset().top - $(window).scrollTop()) < 250) {
+            $(this).stop().fadeTo(100, 0);
+        } else {
+            $(this).stop().fadeTo('slow', 1);
+        }
+    });
+});           
+</script>
+
+ <script>
+ /*bottom fade ins*/
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();  
+            if( bottom_of_window > bottom_of_object ){
+                $(this).addClass('visible');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('visible');                
+            }          
+        });
+    });
+});
+</script>
+  
+</body>
+</html>

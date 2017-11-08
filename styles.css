@@ -1,0 +1,427 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;  }
+
+*, *:before, *:after {
+  box-sizing: inherit;  }
+
+body {
+  max-width: 910px; 
+  background-image: url(img/micherrie.jpg);  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  margin: 0 auto;
+  background-size: 110%;  }
+
+#container {
+  padding: 0; 
+  margin: 0 auto; 
+  margin-bottom: 100px; }
+
+/* indvidual divs inside a wrap container */
+#container div { 
+  display: flex;
+  justify-content: center;
+  align-items: center;  } 
+  /* align flex item on cross axis(vertical) at their center */
+
+/* makes it 100px square */
+#container div { 
+    margin: 50px; 
+    padding: 50px; 
+    width: 50px;
+    height: 50px; }
+
+#container div { 
+  background-color: rgba( 255, 255, 255, .5);
+  -webkit-transition: all 1500ms ease;   }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 300;  }
+
+h1, h2 { 
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; } 
+
+h1 {  
+  font-size: 3rem;
+  line-height: 1; }  
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 1; }
+
+ 
+#container div:nth-child(3) { 
+  width: 80vw; }
+
+#container div:nth-child(4) { 
+  width: 80vw; 
+  background-color: rgba(130,157,255,.5); }
+
+#container div:nth-child(5) { 
+  width: 80vw; }
+/* ZIG ZAG BKGD */
+#container div:nth-child(5) {
+background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transparent 25%) -50px 0,
+  linear-gradient(to bottom left, rgba(202,214,255,0.5) 25%, transparent 25%) -50px 0,
+  linear-gradient(to top left, rgba(202,214,255,0.5) 25%, transparent 25%),
+  linear-gradient(to top right, rgba(202,214,255,0.5) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: #fff; 
+  background-attachment: fixed;
+  position: relative; }
+/* GO BUTTON INSIDE ZIG ZAG DIV */
+#container div:nth-child(5) > div {
+  border-radius: 50%; }
+
+
+/* BLANK RECTANGLE */
+#container div:nth-child(6) { 
+   background-color: #ccc; }
+/* BLANK RECTANGLE */
+#container div:nth-child(7) { 
+  background-color: #ccc; }
+
+/* PARIS */
+#container div:nth-child(8) {
+  background-image: url(img/paris-apt.png);
+  background-color: transparent;
+  background-repeat: no-repeat;  
+  background-position: left center; 
+  background-size: 100px, auto;  } 
+
+  #container div:nth-child(8) > div {
+    width: 40vw;
+    background-color: transparent;
+    position: relative;
+    left: 150px;  }
+
+/* CHERRY TREE BLOSSOM */
+#container div:nth-child(9) { 
+  background-image: url(img/micherrie150sq.png);  }
+
+  #container div:nth-child(9) > div {    
+    background: transparent; 
+    color: #fff;
+    position: relative;
+    left: 150px;  }
+
+/* ZINNIA */
+#container div:nth-child(10) {
+  background-image: url(img/carnival-zinnia.jpg);
+  background-repeat: no-repeat;  
+  background-position: center; }
+
+  #container div:nth-child(10) > div {
+    background: transparent;  
+    color: #fff; 
+    position: relative; 
+    left: 240px; }
+  #container div:nth-child(10) > div {  
+    margin-left: 10px; }
+
+/* HORSE BODY */
+#container div:nth-child(11) {
+  background-image: url(img/horse_ovrlay.png);
+  background-repeat: no-repeat;  
+  background-position: center; } 
+
+/* RODEO QUEENS LA GRAND */
+#container div:nth-child(12) {
+  background-image: url(img/rodeo150_sq.png);
+  background-repeat: no-repeat;  
+  background-position: center;
+  color: #fff; }
+
+  #container div:nth-child(12) > div {
+    position: relative;
+    left: 150px;
+    -webkit-box-shadow: 5px 5px 6px -4px rgba(197,197,250,1);
+    box-shadow: 5px 5px 6px -4px rgba(197,197,250,1); }
+
+/* MEDIA QUERIES */
+@media (max-width: 624px) {
+  #container div:nth-child(13) > .first,
+  #container div:nth-child(16) > .first {
+   margin-top: -40px;  }
+  
+  #container div:nth-child(13) > .second,
+  #container div:nth-child(16) > .second {
+   margin-top: -30px;  }
+  
+  #container div:nth-child(13) > .third,
+  #container div:nth-child(16) > .third {
+   margin-top: -20px; }
+
+  #container div:nth-child(14),
+  #container div:nth-child(17) {
+   margin-top: 300px; }
+  }
+
+
+/* MEDIA QUERIES   621 628 635 845 867 873*/ 
+@media (min-width: 625px) and (max-width: 874px) {
+
+  #container div:nth-child(13) > .first,
+  #container div:nth-child(16) > .first {
+   margin-top: -40px; }
+  
+  #container div:nth-child(13) > .second,
+  #container div:nth-child(16) > .second {
+   margin-top: -30px; }
+  
+  #container div:nth-child(13) > .third,
+  #container div:nth-child(16) > .third {
+   margin-top: -20px; }
+   
+  #container div:nth-child(14),
+  #container div:nth-child(17) {
+   margin-top: 200px; }
+  }
+
+@media (min-width: 875px) {    
+  #container div:nth-child(13) > .first,
+  #container div:nth-child(16) > .first {
+  margin-top: -40px; }
+
+  #container div:nth-child(13) > .second,
+  #container div:nth-child(16) > .second {
+  margin-top: -30px; }
+
+  #container div:nth-child(13) > .third,
+  #container div:nth-child(16) > .third {
+  margin-top: -20px; } 
+   
+  #container div:nth-child(14),
+  #container div:nth-child(17) {
+  margin-top: 100px; }
+  }
+
+
+/* FLEX CONTAINER 13 -HORSE TRIPLE CIRCLES*/
+#container div:nth-child(13) {   
+  width: 80vw; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+ /*  ROW= FLEX ITEMS IN DIRECTION OF MAIN AXIS NOT DEFAULT */ 
+
+#container div:nth-child(13) {
+  background-color: transparent; }
+
+/* FLEX-ITEMS */
+  #container div:nth-child(13) > .first {
+    background-image: url(img/horse_ovrlay.png);
+    background-position: center; 
+    background-size: 100%; }
+  
+  #container div:nth-child(13) > .first {
+      background-color: transparent;
+      border-radius: 50%;
+      color: #fff; }
+  
+  #container div:nth-child(13) > .second,
+  #container div:nth-child(13) > .third {   
+    background-color: rgba( 255, 255, 255, .5);
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 6px -4px rgba(197,197,250,1);
+      box-shadow: 5px 5px 6px -4px rgba(197,197,250,1); 
+    color: #fff; }
+  
+   #container div:nth-child(13) > .third {   
+     width: 100px; }
+
+/* CROC */
+#container div:nth-child(14) {
+  position: relative;
+  background-color: transparent;
+  background-image: url(img/gator_sq.png);
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-position: center; } 
+
+    #container div:nth-child(14) > div {
+      position: relative;     
+      left: 150px; 
+      -webkit-box-shadow: 5px 5px 6px -4px rgba(197,197,250,1);
+      box-shadow: 5px 5px 6px -4px rgba(197,197,250,1);  }
+   
+/* wide blank PANEL */
+#container div:nth-child(15) {
+  width: 80vw; }
+
+
+/* BUTHAN BIRD  FLEX CONTAINER*/
+#container div:nth-child(16) {   
+  width: 80vw; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  }
+ /*  ROW= FLEX ITEMS IN DIRECTION OF MAIN AXIS NOT DEFAULT */ 
+
+#container div:nth-child(16) {
+  background-color: transparent; }
+
+/* FLEX iTEMS */
+ #container div:nth-child(16) > .first {
+    background-image: url(img/bird.png);
+    background-color: transparent;
+    background-position: center; 
+    background-size: 100%;  }
+  
+  #container div:nth-child(16) > .first,
+  #container div:nth-child(16) > .second,
+  #container div:nth-child(16) > .third {
+      
+      border-radius: 50%;
+      color: #fff; }
+
+#container div:nth-child(16) > .second {   
+    background-color: rgba(179, 242, 249, 0.8); }
+  
+  #container div:nth-child(16) > .third {   
+    background-color: rgba( 255, 255, 255, .5);
+    width: 100px;
+    box-shadow: 0px 5px 5px -4px rgb(179, 242, 249);
+    -webkit-box-shadow: 0px 5px 5px -4px rgb(179, 242, 249);
+    -o-box-shadow: 0px 5px 5px -4px  rgb(179, 242, 249);  }    
+
+/* MORROCCO */
+#container div:nth-child(17) {
+  width: 80vw;
+  background-color: transparent;
+  background-image: url(img/morrocco.png);
+  background-repeat: no-repeat;
+  background-size: 100px 100px; 
+  background-position: left; }  
+
+#container div:nth-child(17) > div {
+    width: 6.25rem; 
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0px 5px 5px -4px rgb(179, 242, 249);
+    -webkit-box-shadow: 0px 5px 5px -4px rgb(179, 242, 249);
+    -o-box-shadow: 0px 5px 5px -4px  rgb(179, 242, 249); }
+
+
+/* BLANK RECTANGLE */
+#container div:nth-child(18) {
+  width: 80vw;
+  height: 30vh; }
+/* HORSE CIRCLE PLUS 2 RECTANGLES */
+#container div:nth-child(19) {
+  width: 80vw;
+  background-color: transparent;
+  background-image: url(img/zodiac.png);
+  background-repeat: no-repeat;
+  background-size: 100px 100px; 
+  background-position: left; }      
+
+  #container div:nth-child(19) > div {
+    -webkit-box-shadow: 5px 5px 6px -4px rgba(197,197,250,1);
+    box-shadow: 5px 5px 6px -4px rgba(197,197,250,1);  }
+
+/* MEDIA Q FOR DIV NTH-CHILD 19 */
+@media (min-width: 320px) and (max-width: 469px) {
+  /* MORROCCO */
+  #container div:nth-child(17) > div {
+     margin-right: 50px;
+     margin-left: 150px; }
+/* HORSE RECTNGLE */
+   #container div:nth-child(19) > div:first-child {
+     display: none; } 
+
+  #container div:nth-child(19) > div {
+     margin-right: 50px;
+     margin-left: 150px;  }
+  }    
+
+@media (min-width: 470px) and (max-width: 624px) {
+   #container div:nth-child(19) > div:first-child {
+     margin-right: 0px;
+     margin-left: 140px; }
+  }
+/* FADE-INS */
+.hideme {
+  opacity: 0;
+  -webkit-filter: blur(0px);
+  filter: blur(0px); }
+
+/* FADE OUTS @START */
+.showme {
+  opacity: 1; } 
+
+.visible {
+  opacity: 1!important; }  
+/* .showme:hover {
+  filter: blur(0px); } */
+
+footer{
+  height: 225px;
+  text-align: center; }
+
+/* BLK BUTTON */
+.ripple {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition: color 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
+  color: #666;  }
+
+.ripple:before {
+  content: '';
+  background: #666;
+  border-radius: 100%; /* WIPES IT OUT TO ZERO */
+  -webkit-transform: scale(0);
+  transform: scale(0);   
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition: all 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000);  }
+
+.ripple:before {
+  -webkit-animation: fade-in 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;}
+  100% {
+    opacity: 1;}
+} 
+
+.ripple:hover { color: #fff; }
+/* Scale x2 -ovrflow hidden */
+.ripple:hover:before {
+  -webkit-transform: scale(2);
+  transform: scale(2); }
+
+.ripple > h2 {
+  line-height: 1.6; }  
