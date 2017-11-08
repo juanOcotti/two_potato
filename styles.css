@@ -135,7 +135,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* RODEO QUEENS LA GRAND */
 #container div:nth-child(12) {
-  background-image: url(img/rodeo150_sq.png);
+  background-image: url(rodeo150_sq.png);
   background-repeat: no-repeat;  
   background-position: center;
   color: #fff; }
@@ -219,7 +219,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* FLEX-ITEMS */
   #container div:nth-child(13) > .first {
-    background-image: url(img/horse_ovrlay.png);
+    background-image: url(horse_ovrlay.png);
     background-position: center; 
     background-size: 100%; }
   
@@ -243,7 +243,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 #container div:nth-child(14) {
   position: relative;
   background-color: transparent;
-  background-image: url(img/gator_sq.png);
+  background-image: url(gator_sq.png);
   background-repeat: no-repeat;
   background-size: 100%; 
   background-position: center; } 
@@ -272,7 +272,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 
 /* FLEX iTEMS */
  #container div:nth-child(16) > .first {
-    background-image: url(img/bird.png);
+    background-image: url(bird.png);
     background-color: transparent;
     background-position: center; 
     background-size: 100%;  }
@@ -298,7 +298,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 #container div:nth-child(17) {
   width: 80vw;
   background-color: transparent;
-  background-image: url(img/morrocco.png);
+  background-image: url(morrocco.png);
   background-repeat: no-repeat;
   background-size: 100px 100px; 
   background-position: left; }  
@@ -320,7 +320,7 @@ background: linear-gradient(to bottom right, rgba(202,214,255,0.5) 25%, transpar
 #container div:nth-child(19) {
   width: 80vw;
   background-color: transparent;
-  background-image: url(img/zodiac.png);
+  background-image: url(zodiac.png);
   background-repeat: no-repeat;
   background-size: 100px 100px; 
   background-position: left; }      
